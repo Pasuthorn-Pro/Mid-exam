@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidenav {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.sidenav header {
+    margin-bottom: 20px;
+}
+
+.sidenav nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidenav nav a:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    margin-left: 50px; /* Adjusted for padding and border */
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+table {
+    width: 700px;
+    border-collapse: collapse; /* Ensures that table borders are collapsed into a single line */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Adds a border to table cells */
+    padding: 8px; /* Adds padding for better spacing */
+    text-align: left; /* Aligns text to the left within cells */
+}
+
+th {
+    background-color: #f4f4f4; /* Background color for header cells */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 95%; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 60px; /* Height adjustment for textarea */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: green;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+button[type="reset"] {
+    background-color: red;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: darkred;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive design for viewport width below 700px */
+/* Responsive design for viewport width below 700px */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidenav {
+        width: 100%;
+        height: 70px;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .sidenav nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #f4f4f4;
+    }
+
+    .sidenav nav a {
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        width: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}

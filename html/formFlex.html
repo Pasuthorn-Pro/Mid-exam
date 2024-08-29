@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidenav">
+            <header>
+                <nav>
+                    <a href="Page1.html">Page1</a>
+                    <a href="Page2.html">Page2</a>
+                    <a href="Page3.html">Page3</a>
+                </nav>
+            </header>
+        </div>
+        <div class="main-content">
+            <div class="form-container">
+                <table>
+                    <tr>
+                        <th>Info</th>
+                        <th>User Input</th>
+                    </tr>
+                    <tr>
+                        <th>กรอกรหัสนักศึกษา</th>
+                        <th><input type="text" name="std_id"></th>
+                    </tr>
+                    <tr>
+                        <th>กรอกชื่อ นามสกุล</th>
+                        <th><input type="text" name="std_name"></th>
+                    </tr>
+                    <tr>
+                        <th>กรอกอีเมล</th>
+                        <th><input type="email" name="std_email"></th>
+                    </tr>
+                    <tr>
+                        <th>กรอกรหัสผ่าน</th>
+                        <th><input type="password" name="std_password"></th>
+                    </tr>
+                    <tr>
+                        <th>กรอกเบอร์โทรศัพท์</th>
+                        <th><input type="tel" name="std_phone"></th>
+                    </tr>
+                    <tr>
+                        <th>กรอกวัน เดือน ปีเกิด</th>
+                        <th><input type="date" name="bday"></th>
+                    </tr>
+                    <tr>
+                        <th>สิ่งที่ชอบ</th>
+                        <th><input type="text" name="std_likes"></th>
+                    </tr>
+                    <tr>
+                        <th>กรอกสว่นสูง (cm)</th>
+                        <th><input type="text" name="std_height"></th>
+                    </tr>
+                    <tr>
+                        <th>กรอกน้ำหนัก (kg)</th>
+                        <th><input type="text" name="std_weight"></th>
+                    </tr>
+                    <tr>
+                        <th>รูปภาพ</th>
+                        <th><input type="file" name="std_photo"></th>
+                    </tr>
+                    <tr>
+                        <th>สาขาวิชา</th>
+                        <th>
+                            <label><input type="radio" name="major" value="INET"> INET</label><br>
+                            <label><input type="radio" name="major" value="INE"> INE</label><br>
+                            <label><input type="radio" name="major" value="ITI"> ITI</label><br>
+                            <label><input type="radio" name="major" value="IT"> IT</label><br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>อาหารที่ชอบ</th>
+                        <th>
+                            <label><input type="checkbox" name="food" value="Ham"> Ham</label><br>
+                            <label><input type="checkbox" name="food" value="Rice"> Rice</label><br>
+                            <label><input type="checkbox" name="food" value="Steak"> Steak</label><br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>ที่อยู่</th>
+                        <th><textarea name="address"></textarea></th>
+                    </tr>
+                    <tr>
+                        <th>ชั้นปี</th>
+                        <th>
+                            <select name="year">
+                                <option value="1">ปี 1</option>
+                                <option value="2">ปี 2</option>
+                                <option value="3">ปี 3</option>
+                                <option value="4">ปี 4</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>ยืนยันข้อมูล</th>
+                        <th>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* General styling for the sidebar */
+.sidenav {
+    height: 100%;
+    width: 250px; /* Width of the sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidenav header {
+    margin-bottom: 20px;
+}
+
+.sidenav nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidenav nav a:hover {
+    background-color: #ddd;
+}
+
+/* Styling for the main content area */
+main {
+    margin-left: 250px; /* Adjust margin based on sidebar width */
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Responsive design for viewport width below 700px */
+@media (max-width: 700px) {
+    .sidenav {
+        width: 100%;
+        height: auto; /* Sidebar height auto-adjusts */
+        position: relative;
+        box-shadow: none;
+    }
+
+    .sidenav nav a {
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
